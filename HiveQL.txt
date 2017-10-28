@@ -1,0 +1,80 @@
+1. HiVEQL 
+
+Hive provides a CLI to write Hive queries using Hive Query Language (HiveQL). Generally HQL syntax is similar to the SQL syntax that most data analysts are familiar with. Hive's SQL-inspired language separates the user from the complexity of Map Reduce programming. It reuses familiar concepts from the relational database world, such as tables, rows, columns and schema, to ease learning. Most interactions tend to take place over a command line interface (CLI). Hive provides a CLI to write Hive queries using Hive Query Language (Hive-QL).
+Generally, HiveQL syntax is similar to the SQL syntax that most data analysts are familiar with. Hive supports four file formats those are TEXTFILE, SEQUENCEFILE, ORC and RCFILE (Record Columnar File).
+For single user metadata storage Hive uses derby database and For multiple user Metadata or shared Metadata case Hive uses MYSQ
+
+Types of Built-in Operators in HIVE are:
+
+Relational Operators
+Arithmetic Operators
+Logical Operators
+Operators on Complex types
+Complex type Constructors
+Relational Operators:
+
+We use Relational operators for relationship comparisons between two operands.
+
+Operators such as equals, Not equals, less than, greater than …etc
+The operand types are all number types in these Operators.
+
+Built-in Operator	Description						Operand
+X = Y			TRUE 
+
+			if expression X is equivalent to expression Y 		It takes all primitive types
+
+			Otherwise FALSE.
+
+X != Y			TRUE
+
+			if expression X is not equivalent to expression Y	It takes all primitive types
+
+			Otherwise FALSE.
+
+X < Y			TRUE
+
+			if expression X is less than expression Y 		It takes all primitive types			
+
+			Otherwise FALSE.
+
+X <= Y			TRUE 
+
+			if expression X is less than or equal to expression Y 	It takes all primitive type
+
+			Otherwise FALSE.
+
+X>Y			TRUE
+
+			if expression X is greater than expression Y		It takes all primitive types	
+
+			Otherwise FALSE.
+
+X>= Y			TRUE 
+
+			if expression X is greater than or equal to expression	It takes all primitive types 
+			Y. Otherwise FALSE.
+
+X IS NULL		TRUE 
+			if expression X evaluates to NULL otherwise FALSE.	It takes all types
+
+
+X IS NOT NULL		FALSE 
+
+			If expression X evaluates to NULL otherwise TRUE.	It takes all types
+
+
+X LIKE Y		TRUE 
+
+			If string pattern X matches to Y otherwise FALSE.	Takes only Strings	
+
+
+X RLIKE Y		NULL if X or Y is NULL, 
+			TRUE 							
+			if any substring of X matches the Java regular		Takes only Strings 
+			expression Y, otherwise FALSE.	
+
+
+X REGEXP Y		Same as RLIKE.						Takes only Strings
+
+
+
